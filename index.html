@@ -4,12 +4,12 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>CS 476 Fall 2024</title>
+  <title>CS476: Program Verification</title>
   <style>
     html {
       line-height: 1.5;
       font-family: Georgia, serif;
-      font-size: 20px;
+      font-size: 16px;
       color: #1a1a1a;
       background-color: #fdfdfd;
     }
@@ -169,13 +169,219 @@
 </head>
 <body>
 
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#topic-list" id="toc-topic-list">Topic List</a></li>
+<li><a href="#grading" id="toc-grading">Course Work, Policies and
+Procedures</a></li>
+<li><a href="#reading-materials" id="toc-reading-materials">Reading
+Materials</a></li>
+<li><a href="#lectures" id="toc-lectures">Lectures</a>
+<ul>
+<li><a href="#lecture-1-27th-aug" id="toc-lecture-1-27th-aug">Lecture 1
+(27th Aug)</a></li>
+<li><a href="#lecture-2-29th-aug" id="toc-lecture-2-29th-aug">Lecture 2
+(29th Aug)</a></li>
+<li><a href="#lecture-3-3rd-sep" id="toc-lecture-3-3rd-sep">Lecture 3
+(3rd Sep)</a></li>
+<li><a href="#lecture-4-5th-sept" id="toc-lecture-4-5th-sept">Lecture 4
+(5th Sept)</a></li>
+<li><a href="#lecture-5-10th-sept" id="toc-lecture-5-10th-sept">Lecture
+5 (10th Sept)</a></li>
+<li><a href="#lecture-6-12th-sept" id="toc-lecture-6-12th-sept">Lecture
+6 (12th Sept)</a></li>
+<li><a href="#lecture-7-17th-sept" id="toc-lecture-7-17th-sept">Lecture
+7 (17th Sept)</a></li>
+<li><a href="#lecture-8-19th-sept" id="toc-lecture-8-19th-sept">Lecture
+8 (19th Sept)</a></li>
+</ul></li>
+<li><a href="#homework" id="toc-homework">Homework</a>
+<ul>
+<li><a href="#hw1-due-10th-sept" id="toc-hw1-due-10th-sept">HW1 (Due
+10th Sept)</a></li>
+<li><a href="#hw2-due-24th-sept" id="toc-hw2-due-24th-sept">HW2 (Due
+24th Sept)</a></li>
+</ul></li>
+<li><a href="#tools-used" id="toc-tools-used">Tools used</a>
+<ul>
+<li><a href="#maude-and-maude-tools"
+id="toc-maude-and-maude-tools">Maude and Maude tools</a></li>
+</ul></li>
+</ul>
+</nav>
 
 <div id='main'>
 <header id="title-block-header">
-<h1 class="title">CS 476 Fall 2024</h1>
+<h1 class="title">CS476: Program Verification</h1>
+<p class="subtitle">Fall 2024</p>
 </header>
 
-
+<ul>
+<li><strong>Time:</strong> Tuesday and Thursday, 9:30-10:45</li>
+<li><strong>Professor:</strong> <a
+href="http://formal.cs.illinois.edu/meseguer/">José Meseguer</a> (email:
+<a href="mailto:meseguer@illinois.edu"
+class="email">meseguer@illinois.edu</a>)</li>
+<li><strong>Office hours:</strong>* 10:50-12:00 at Siebel 2108, or by
+appointment requested after each lecture. Any consultations should be
+made during office hours.</li>
+</ul>
+<h2 id="topic-list">Topic List</h2>
+<ul>
+<li>Algebraic specification of declarative deterministic programs</li>
+<li>Inductive first-order logic and inductive theorem proving</li>
+<li>Formal verification of declarative functional programs</li>
+<li>Rewriting logic specification of declarative concurrent
+programs</li>
+<li>Modal and temporal logics</li>
+<li>Model checking verification of modal and temporal logic properies of
+declarative concurrent programs</li>
+<li>Rewriting logic semantics of imperative concurrent programs</li>
+<li>Model checking verification of imperative concurrent programs</li>
+<li>Narrowing-based model checking verification of modal and temporal
+logic properties of infinite-state declarative concurrent programs</li>
+</ul>
+<h2 id="grading">Course Work, Policies and Procedures</h2>
+<p>Students taking the course will be expected to:</p>
+<ul>
+<li><strong>Participate actively</strong> and regularly in the
+course.</li>
+<li>Present answers to <strong>biweekly homework assignments</strong>
+solved <strong>individually</strong>. Although student interaction and
+cooperation is encouraged, this <strong>excludes</strong> any
+communication on how to solve posted homework assignments, including the
+comprehensive one (see below). Communication on how to solve homework
+would constitute a serious violation of the honor code.</li>
+<li>Present answers to a <strong>midterm exam</strong> at the classroom
+during the normal lecture time (9:30 to 10:45) on Thursday October 17.
+Students are encouraged to be at the classroom a few minutes before the
+exam, so that the exam can begin on time and they can have the full 75
+minutes to write their answers.</li>
+<li>A <strong>comprehensive homework assignment</strong> at the end of
+the course.</li>
+<li>(if the course is taken for 4 units) Develop a <strong>term
+project</strong>, either individually or as part of a small group of
+students.</li>
+</ul>
+<p><strong>Grading.</strong></p>
+<ul>
+<li>The regularity in active participation will contribute 10% to the
+final grade.</li>
+<li>Each problem on each biweekly homework assignment will be worth 10
+points, and the biweekly homeworks all together will be worth 50% of the
+grade.</li>
+<li>Late homework will receive a 0%.</li>
+<li>The midterm exam will be worth 20% of the grade.</li>
+<li>The comprehensive homework assignment will be worth 20% of the
+grade.</li>
+<li>There will be no final exam.</li>
+<li>If you are taking the class for 4 credits, then there will also be a
+final project for the course. The final project must be turned in by the
+assigned final date before a grade for the class will be issued.</li>
+</ul>
+<h2 id="reading-materials">Reading Materials</h2>
+<ul>
+<li><a href="readings/STACS.pdf">(STACS) Set Theory and Algebra in
+Computer Science</a>.</li>
+<li><a
+href="https://vufind.carli.illinois.edu/vf-uiu/Record/uiu_8560680">Peter
+Olveczky's book Formal Modeling and Analysis of Distributed
+Systems</a>.</li>
+<li><a
+href="https://vufind.carli.illinois.edu/vf-uiu/Record/uiu_5675801">All
+About Maude</a></li>
+<li><a href="readings/maude-jlamp.pdf">Programming and Symbolic
+Computation in Maude</a>.</li>
+<li><a href="readings/MTA.pdf">Maude Termination Assistant</a>. The MTA
+tool, its manual, and a collection of examples can be found on the <a
+href="http://maude.cs.illinois.edu/tools/mta">MTA website</a>.</li>
+</ul>
+<h2 id="lectures">Lectures</h2>
+<h3 id="lecture-1-27th-aug">Lecture 1 (27th Aug)</h3>
+<ul>
+<li><a href="lectures/pv1-slides.pdf">Slides</a></li>
+</ul>
+<h3 id="lecture-2-29th-aug">Lecture 2 (29th Aug)</h3>
+<ul>
+<li><a href="lectures/pv2-slides.pdf">Slides</a></li>
+</ul>
+<h3 id="lecture-3-3rd-sep">Lecture 3 (3rd Sep)</h3>
+<ul>
+<li><a href="lectures/pv3-slides.pdf">Slides</a></li>
+</ul>
+<h3 id="lecture-4-5th-sept">Lecture 4 (5th Sept)</h3>
+<ul>
+<li><a href="lectures/pv4-slides.pdf">Slides</a></li>
+</ul>
+<h3 id="lecture-5-10th-sept">Lecture 5 (10th Sept)</h3>
+<ul>
+<li><a href="lectures/pv5-slides.pdf">Slides</a></li>
+</ul>
+<h3 id="lecture-6-12th-sept">Lecture 6 (12th Sept)</h3>
+<ul>
+<li><a href="lectures/pv6-slides-24.pdf">Slides</a></li>
+</ul>
+<h3 id="lecture-7-17th-sept">Lecture 7 (17th Sept)</h3>
+<ul>
+<li><a href="lectures/pv7-slides-24.pdf">Slides</a></li>
+</ul>
+<h3 id="lecture-8-19th-sept">Lecture 8 (19th Sept)</h3>
+<ul>
+<li><a href="lectures/pv8-slides-24.pdf">Slides</a></li>
+</ul>
+<h2 id="homework">Homework</h2>
+<p>When submitting homework please make sure:</p>
+<ol type="1">
+<li><p>All attachments should start with
+<code>cs476-hwN-&lt;netid&gt;</code>.</p>
+<p>For example, <code>cs476-hw2-wuxytan7.pdf</code>, or
+<code>cs476-hw2-wuxytan7-nat-list.maude</code>.</p>
+<div class="warning">
+<p>From HW2 onward, two points will be deducted if you do not use this
+format. It may be hard to find your assignment if you don’t use this
+format.</p>
+<p>Make sure you use hypens and not underscores.</p>
+</div></li>
+<li><p>Place your name and netid in the title or header of the PDF. This
+is to ensure that your homework doesn’t get mixed up with someone
+else’s.</p></li>
+</ol>
+<h3 id="hw1-due-10th-sept">HW1 (Due 10th Sept)</h3>
+<ul>
+<li><a href="homework/hw#1-24.pdf">Homework 1</a></li>
+</ul>
+<h3 id="hw2-due-24th-sept">HW2 (Due 24th Sept)</h3>
+<ul>
+<li><a href="homework/hw#2-24.pdf">Homework 2</a></li>
+</ul>
+<h2 id="tools-used">Tools used</h2>
+<h3 id="maude-and-maude-tools">Maude and Maude tools</h3>
+<p>Maude will be the primary tool used in this course. Several other
+tools/libraries written in Maude will also be used. Instructions about
+them will appear at or before the time when they are used in some
+lectures.</p>
+<p>The current version is Maude 3.4. Maude executables for both Linux
+and Mac OS can be downloaded from the github release page and installed
+as per instructions at <a
+href="https://maude.cs.illinois.edu/wiki/Maude_download_and_installation">the
+Maude wiki</a>.</p>
+<h4 id="instructions-for-usage-on-ews-maude-3.1">Instructions for usage
+on EWS (Maude 3.1)</h4>
+<p>The EWS machines have an older version of glibc, so we must use Maude
+3.1 instead of the latest available version. Below are instructions to
+download and install that version.</p>
+<pre><code>$ wget http://maude.cs.illinois.edu/w/images/3/38/Maude-3.1-linux.zip
+$ unzip Maude-3.1-linux.zip
+$ cd maude-3.1/
+$ ./maude.linux64
+./maude.linux64: /lib64/libtinfo.so.5: no version information available (required by ./maude.linux64)
+             \||||||||||||||||||/
+           --- Welcome to Maude ---
+             /||||||||||||||||||\
+         Maude 3.1 built: Oct 12 2020 20:12:31
+         Copyright 1997-2020 SRI International
+           Mon Aug 29 11:15:24 2022
+Maude&gt;</code></pre>
 </div>
 
 </body>

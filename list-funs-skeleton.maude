@@ -1,0 +1,20 @@
+
+fmod LIST-FUNCTIONS is protecting NAT .
+  sort NeList List .
+  subsort Nat < NeList < List .
+  op nil : -> List [ctor] .
+  op _ _ : List List -> List [ctor assoc id: nil] .
+  op _ _ : NeList NeList -> NeList [ctor assoc id: nil] .
+  op rev : List -> List .
+  op remove_from_ : Nat List -> Nat .
+  op no-reps : List -> List .
+  op pal : List -> Bool .
+  op prefix : List List -> Bool .
+
+  vars n m : Nat .  vars L L1 L2 : List .  vars P Q : NeList .
+
+  *** add here your equations defining rev, remove_from_, no-reps
+  *** pal, and prefix
+  
+endfm
+

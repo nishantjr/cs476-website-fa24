@@ -1,0 +1,20 @@
+
+fmod INTEGER is  protecting BOOL .
+  sorts Zero NzNat Nat NzNeg Neg Int .
+  subsorts Zero NzNat < Nat < Int .
+  subsorts Zero NzNeg < Neg < Int .
+  op 0 : -> Zero [ctor] .
+  op s : Nat -> NzNat [ctor] .
+  op p : Neg -> NzNeg [ctor] .
+  ops s p : Int -> Int .
+  op - : Int -> Int .
+  op _+_ : Int Int -> Int .
+  op _*_ : Int Int -> Int .
+  op _>_ : Int Int -> Bool .
+
+  vars i j : Int .  vars n m : Nat .  vars n' m' : NzNat .
+  vars q r : Neg .  vars q' r' : NzNeg .
+
+  *** add here your equations defining s, p, -, _+_, _*_ and _>_
+
+endfm
