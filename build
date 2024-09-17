@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+generate-md() {
+    pandoc -t html --standalone \
+        --template template.pandoc \
+        --toc \
+        "$@"
+}
+
+generate-md index.md > index.html
