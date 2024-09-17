@@ -145,7 +145,10 @@ When submitting homework please make sure:
 ### HW2 (Due 24th Sept)
 
 * [Homework 2](homework/hw#2-24.pdf)
+ 
+  [int-arith-skeleton.maude](int-arith-skeleton.maude)
 
+  [list-funs-skeleton.maude](list-funs-skeleton.maude)
 
 Tools used
 ----------
