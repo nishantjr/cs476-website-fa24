@@ -140,11 +140,11 @@ When submitting homework please make sure:
 
 ### HW1 (Due 10th Sept)
 
-* [Homework 1](homework/hw#1-24.pdf)
+* [Homework 1](homework/hw1-24.pdf)
 
 ### HW2 (Due 24th Sept)
 
-* [Homework 2](homework/hw#2-24.pdf)
+* [Homework 2](homework/hw2-24.pdf)
  
   [int-arith-skeleton.maude](int-arith-skeleton.maude)
 
