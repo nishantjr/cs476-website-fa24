@@ -146,9 +146,9 @@ When submitting homework please make sure:
 
 * [Homework 2](homework/hw2-24.pdf)
  
-  [int-arith-skeleton.maude](int-arith-skeleton.maude)
+  [int-arith-skeleton.maude](homework/int-arith-skeleton.maude)
 
-  [list-funs-skeleton.maude](list-funs-skeleton.maude)
+  [list-funs-skeleton.maude](homework/list-funs-skeleton.maude)
 
 Tools used
 ----------
