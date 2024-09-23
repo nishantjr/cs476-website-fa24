@@ -118,6 +118,14 @@ Lectures
 
 * [Slides](lectures/pv8-slides-24.pdf)
 
+### Lecture 9 (24th Sept)
+
+* [Slides](lectures/pv9-slides-24.pdf)
+
+### Lecture 10 (26th Sept)
+
+* [Slides](lectures/pv10-slides-24.pdf)
+
 
 Homework
 --------
