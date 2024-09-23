@@ -71,8 +71,6 @@ Reading Materials
     Systems].
 -   [All About Maude]
 -   [Programming and Symbolic Computation in Maude].
--   [Maude Termination Assistant]. The MTA tool, its manual, and a collection of
-    examples can be found on the [MTA website].
 
   [(STACS) Set Theory and Algebra in Computer Science]: readings/STACS.pdf
   [Peter Olveczky\'s book Formal Modeling and Analysis of Distributed Systems]:
@@ -80,8 +78,6 @@ Reading Materials
   [Maude Manual]: https://maude.cs.illinois.edu/w/images/e/e9/Maude34manual.pdf
   [All About Maude]: https://vufind.carli.illinois.edu/vf-uiu/Record/uiu_5675801
   [Programming and Symbolic Computation in Maude]: readings/maude-jlamp.pdf
-  [Maude Termination Assistant]: readings/MTA.pdf
-  [MTA website]: http://maude.cs.illinois.edu/tools/mta
 
 Lectures
 --------
@@ -125,6 +121,12 @@ Lectures
 ### Lecture 10 (26th Sept)
 
 * [Slides](lectures/pv10-slides-24.pdf)
+* Additional reading: [Maude Termination Assistant].
+  The MTA tool, its manual, and a collection of examples can be found on the [MTA website].
+
+[MTA website]: http://maude.cs.illinois.edu/tools/mta
+[Maude Termination Assistant]: readings/MTA.pdf
+
 
 
 Homework
