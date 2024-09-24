@@ -117,6 +117,7 @@ Lectures
 ### Lecture 9 (24th Sept)
 
 * [Slides](lectures/pv9-slides-24.pdf)
+* [Appendix](lectures/pv9-24-appendix.pdf)
 
 ### Lecture 10 (26th Sept)
 
