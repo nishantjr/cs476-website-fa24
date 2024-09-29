@@ -100,7 +100,7 @@ Lectures
 
 ### Lecture 5 (10th Sept)
 
-* [Slides](lectures/pv5-slides.pdf)
+* [Slides](lectures/pv5-slides-24.pdf)
 
 ### Lecture 6 (12th Sept)
 
@@ -128,6 +128,14 @@ Lectures
 [MTA website]: http://maude.cs.illinois.edu/tools/mta
 [Maude Termination Assistant]: readings/MTA.pdf
 
+### Lecture 11 (1st Oct)
+
+* [Slides](lectures/pv11-slides-24.pdf)
+
+
+### Lecture 12 (3rd Oct)
+
+* [Slides](lectures/pv12-slides-24.pdf)
 
 
 Homework
@@ -160,6 +168,10 @@ When submitting homework please make sure:
   [int-arith-skeleton.maude](homework/int-arith-skeleton.maude)
 
   [list-funs-skeleton.maude](homework/list-funs-skeleton.maude)
+
+### HW3 (Due 8th October)
+
+* [Homework 3](homework/hw3-24.pdf)
 
 Tools used
 ----------
