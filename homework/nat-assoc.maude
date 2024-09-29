@@ -1,0 +1,11 @@
+fmod NATURAL is
+ sort Nat .
+ op 0 : -> Nat [ctor] .
+ op s : Nat -> Nat [ctor] .
+ op _+_ : Nat Nat -> Nat .
+ vars x y z x1 y1 z1 : Nat .
+ eq x + 0 = x .
+ eq y + s(z) = s(y + z) .
+ eq (x1 + y1) + z1 = x1 + (y1 + z1) .
+endfm
+

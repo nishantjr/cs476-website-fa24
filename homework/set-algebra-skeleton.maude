@@ -1,0 +1,66 @@
+
+fmod SET-ALGEBRA is
+  protecting NAT .
+  sort Set .
+  subsort Nat < Set .
+  op mt : -> Set [ctor] .                              *** empty set
+  op _,_ : Set Set -> Set [ctor assoc comm id: mt] .   *** set union
+
+  vars N M : Nat .  vars U V W : Set .
+
+  eq N,N = N .    *** set idempotency
+  
+  op _~_  : Nat Nat -> Bool [comm] .    *** equality predicate on naturals
+
+  *** write your equations here, using Peano notation, i.e., 0 and s(N)
+  
+   op _in_  : Nat Set -> Bool .            *** set membership
+
+  *** write your equations here
+
+   op _\_  : Set Set -> Set .           *** set difference
+
+  *** write your equations here
+
+  op _C=_ : Set Set -> Bool .           *** set containment
+
+  *** write your equations here
+  
+  op _~_  : Set Set -> Bool [comm] .    *** equality predicate on sets
+
+  *** write your equations here
+    
+  op _/\_ : Set Set -> Set .           *** set intersection
+
+  *** write your equations here
+  
+  op |_| : Set -> Nat .                  *** cardinality function
+
+  *** write your equations here
+
+endfm
+
+*** all tests below should come out "true"
+
+red 5 ~ 12 == false .
+red 15 ~ 15 == true .
+
+red 4 in (3,3,4,4,7) == true .
+
+red 9 in (3,3,4,4,7) == false .
+
+red (3,3,4,4,4,2,2,9) \ (3,3,3,4,2,7) == 9 .
+
+red (4,4,4,2,2,7) \ (3,3,3,4,2,7) == mt .
+
+red (3,3,4,4,4,2,2,9) C= (3,3,3,4,2,7) == false .
+
+red (3,3,4,4,2,2,9,9) C= (3,4,2,7,9) == true .
+
+red (3,3,4,4,4,2,2,7) ~ (3,3,3,4,2,7) == true .
+
+red (3,3,3,4,2,2,7) ~ (3,3,3,4,2,2) == false .
+
+red (3,3,3,4,4,4,2,2,7,9) /\ (3,3,4,4,2,7,7,1) == 2,3,4,7 .
+
+red | 3,3,4,4,4,2,2,9 | == 4 .

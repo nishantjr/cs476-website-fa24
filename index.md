@@ -173,6 +173,10 @@ When submitting homework please make sure:
 
 * [Homework 3](homework/hw3-24.pdf)
 
+  [nat-assoc.maude](homework/nat-assoc.maude)
+
+  [set-algebra-skeleton.maude](homework/set-algebra-skeleton.maude)
+
 Tools used
 ----------
 
