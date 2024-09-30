@@ -113,6 +113,7 @@ Lectures
 ### Lecture 8 (19th Sept)
 
 * [Slides](lectures/pv8-slides-24.pdf)
+* [Appendix](lectures/pv8-24-appendix.pdf)
 
 ### Lecture 9 (24th Sept)
 
