@@ -96,7 +96,7 @@ Lectures
 
 ### Lecture 4 (5th Sept)
 
-* [Slides](lectures/pv4-slides.pdf)
+* [Slides](lectures/pv4-slides-24.pdf)
 
 ### Lecture 5 (10th Sept)
 
@@ -137,6 +137,15 @@ Lectures
 ### Lecture 12 (3rd Oct)
 
 * [Slides](lectures/pv12-slides-24.pdf)
+
+### Lecture 13 (8th Oct)
+
+* [Slides](lectures/pv13-slides-24.pdf)
+
+
+### Lecture 14 (11th Oct)
+
+* [Slides](lectures/pv14-slides-24.pdf)
 
 
 Homework
