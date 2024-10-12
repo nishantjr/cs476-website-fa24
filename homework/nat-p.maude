@@ -1,0 +1,10 @@
+
+fmod PEANO-p is
+sorts NzNat Nat .   
+subsort NzNat < Nat .
+op 0 : -> Nat [ctor] .
+op s : Nat -> NzNat [ctor] .
+op p : NzNat -> Nat .
+eq p(s(N:Nat)) = N:Nat .
+endfm
+

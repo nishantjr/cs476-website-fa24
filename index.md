@@ -167,25 +167,27 @@ When submitting homework please make sure:
 2.  Place your name and netid in the title or header of the PDF.
     This is to ensure that your homework doesn't get mixed up with someone else's.
 
-### HW1 (Due 10th Sept)
+### Homework 1 (Due 10th Sept)
 
 * [Homework 1](homework/hw1-24.pdf)
 
-### HW2 (Due 24th Sept)
+### Homework 2 (Due 24th Sept)
 
 * [Homework 2](homework/hw2-24.pdf)
- 
-  [int-arith-skeleton.maude](homework/int-arith-skeleton.maude)
+* [int-arith-skeleton.maude](homework/int-arith-skeleton.maude)
+* [list-funs-skeleton.maude](homework/list-funs-skeleton.maude)
 
-  [list-funs-skeleton.maude](homework/list-funs-skeleton.maude)
-
-### HW3 (Due 8th October)
+### Homework 3 (Due 8th October)
 
 * [Homework 3](homework/hw3-24.pdf)
+* [nat-assoc.maude](homework/nat-assoc.maude)
+* [set-algebra-skeleton.maude](homework/set-algebra-skeleton.maude)
 
-  [nat-assoc.maude](homework/nat-assoc.maude)
+### Homework 4 (Due 22nd October)
 
-  [set-algebra-skeleton.maude](homework/set-algebra-skeleton.maude)
+* [Homework 4](homework/hw4-24.pdf)
+* [nat-p.maude](homework/nat-p.maude)
+
 
 Tools used
 ----------
