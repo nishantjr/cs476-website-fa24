@@ -147,6 +147,13 @@ Lectures
 
 * [Slides](lectures/pv14-slides-24.pdf)
 
+### Lecture 15 (15th Oct)
+
+* [Slides](lectures/pv15-slides-24.pdf)
+
+### Lecture 16 (17th Oct)
+
+* [Slides](lectures/pv16-slides-24.pdf)
 
 Homework
 --------
