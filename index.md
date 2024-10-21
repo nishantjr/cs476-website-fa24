@@ -42,7 +42,7 @@ Students taking the course will be expected to:
     Communication on how to solve homework would constitute a
     serious violation of the honor code.
 -   Present answers to a **midterm exam** at the classroom during the normal 
-     lecture time (9:30 to 10:45) on Thursday October 17.  Students are encouraged
+     lecture time (9:30 to 10:45) on Thursday Oct 17.  Students are encouraged
      to be at the classroom a few minutes before the exam, so that the exam
      can begin on time and they can have the full 75 minutes to write their answers.
 -   A **comprehensive homework assignment** at the end of the course.
@@ -182,23 +182,23 @@ When submitting homework please make sure:
 2.  Place your name and netid in the title or header of the PDF.
     This is to ensure that your homework doesn't get mixed up with someone else's.
 
-### Homework 1 (Due 10th Sept)
+### HW 1 (Due 10th Sept)
 
 * [Homework 1](homework/hw1-24.pdf)
 
-### Homework 2 (Due 24th Sept)
+### HW 2 (Due 24th Sept)
 
 * [Homework 2](homework/hw2-24.pdf)
 * [int-arith-skeleton.maude](homework/int-arith-skeleton.maude)
 * [list-funs-skeleton.maude](homework/list-funs-skeleton.maude)
 
-### Homework 3 (Due 8th October)
+### HW 3 (Due 8th Oct)
 
 * [Homework 3](homework/hw3-24.pdf)
 * [nat-assoc.maude](homework/nat-assoc.maude)
 * [set-algebra-skeleton.maude](homework/set-algebra-skeleton.maude)
 
-### Homework 4 (Due 22nd October)
+### HW 4 (Due 22nd Oct)
 
 * [Homework 4](homework/hw4-24.pdf)
 * [nat-p.maude](homework/nat-p.maude)
