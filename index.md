@@ -203,6 +203,11 @@ When submitting homework please make sure:
 * [Homework 4](homework/hw4-24.pdf)
 * [nat-p.maude](homework/nat-p.maude)
 
+### HW 5 (Due 6th Nov)
+
+* [Homework 5](homework/hw5-24.pdf)
+* [din-phil4](homework/din-phil4.maude)
+* [list-functions](homework/list-functions.maude)
 
 Tools used
 ----------

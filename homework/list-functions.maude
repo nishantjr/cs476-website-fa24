@@ -1,0 +1,54 @@
+set include BOOL off .
+
+fmod NATURAL-LIST is
+sorts Boolean NzNatural Natural NeList List .   
+subsorts NzNatural < Natural < NeList < List .
+op tt : -> Boolean [ctor] .
+op ff : -> Boolean [ctor]  .
+op _&_ : Boolean Boolean -> Boolean .  *** and
+op 0 : -> Natural [ctor] .
+op s : Natural -> NzNatural [ctor] .
+op _+_ : Natural Natural -> Natural [assoc comm] .
+op nil : -> List [ctor] .
+op _;_ : Natural NeList -> NeList [ctor] .
+op _;_ : NeList NeList -> NeList .
+op _;_ : List List -> List .
+op length : List -> Natural .
+op rev : List -> List .             *** list reverse
+op _.=._ : List List -> Boolean .   *** equality predicate
+op pal : List -> Boolean .          *** palindrome predicate
+
+vars n m : Natural .  vars L L1 L2 L3 : List .  vars P Q : NeList .
+vars A B : Boolean .
+
+eq A & tt = A .
+eq A & ff = ff .
+
+eq n + 0 = n .
+eq n + s(m) = s(n + m) .
+
+eq L ; nil = L .
+eq nil ; L = L .
+eq (n ; L1) ; L2 = n ; (L1 ; L2) .
+
+eq length(nil) = 0 .
+eq length(n) = s(0) .
+eq length(n ; L) = s(length(L)) .
+
+eq rev(nil) = nil .
+eq rev(n) = n .
+eq rev(n ; L) = rev(L) ; n .
+
+eq L .=. L = tt .
+eq 0 .=. s(n) = ff .
+eq s(n) .=. 0 = ff .
+eq s(n) .=. s(m) = n .=. m .
+eq nil .=. Q = ff .
+eq Q .=. nil = ff .
+eq n .=. m ; Q = ff .
+eq m ; Q .=. n = ff .
+eq (n ; P) .=. (m ; Q) = (n .=. m) & (P .=. Q) .
+
+eq pal(L) = L .=. rev(L) .
+endfm
+
