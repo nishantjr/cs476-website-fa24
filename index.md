@@ -163,6 +163,10 @@ Lectures
 
 * [Slides](lectures/pv18-slides-24.pdf)
 
+### Lecture 19 (29th Oct)
+
+* [Slides](lectures/pv19-24.pdf)
+
 Homework
 --------
 
