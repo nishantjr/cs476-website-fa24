@@ -167,6 +167,20 @@ Lectures
 
 * [Slides](lectures/pv19-24.pdf)
 
+### Lecture 20
+
+* [Slides](lectures/pv20-slides-24.pdf)
+
+### Lecture 21
+
+* [Slides](lectures/pv21-slides-24.pdf)
+* [Appendix](lectures/pv21-appendix-24.pdf)
+
+### Lecture 22
+
+* [Slides](lectures/pv22-slides-24.pdf)
+* [Appendix](lectures/pv22-appendix-24.pdf)
+
 Homework
 --------
 
