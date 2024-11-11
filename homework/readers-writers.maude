@@ -1,0 +1,15 @@
+
+mod R&W is 
+  sorts Nat Config .
+  op 0 : -> Nat [ctor] .
+  op s : Nat -> Nat [ctor] .
+  op <_,_> : Nat Nat -> Config [ctor] .  --- readers/writers
+
+  vars R W : Nat .
+
+  rl < 0, 0 > => < 0, s(0) > .
+  rl < R, s(W) > => < R, W > .
+  rl < R, 0 > => < s(R), 0 > .
+  rl < s(R), W > => < R, W > .
+endm
+

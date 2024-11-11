@@ -233,6 +233,14 @@ When submitting homework please make sure:
 * [din-phil4](homework/din-phil4.maude)
 * [list-functions](homework/list-functions.maude)
 
+### HW 6
+
+* [Homework 6](homework/hw6-24.pdf)
+* [rabbits-skeleton.maude](homework/rabbits-skeleton.maude)
+* [readers-writers.maude](homework/readers-writers.maude)
+* [token-ring-skeleton.maude](homework/token-ring-skeleton.maude)
+
+
 Tools used
 ----------
 

@@ -1,0 +1,37 @@
+
+mod RABBIT-HOP is
+protecting NAT .
+sorts Rabbit RabbitList .
+subsort Rabbit < RabbitList .
+
+ops x o free : -> Rabbit [ctor] .
+op nil : -> RabbitList [ctor] .
+op __ : RabbitList RabbitList -> RabbitList [ctor assoc id: nil] .
+ops initial10 solution10 : -> RabbitList .
+
+eq initial10 = x x x x x free o o o o o .
+eq solution10 = o o o o o free x x x x x .
+
+rl [xAdvances] : x free => free x .
+rl [xJumps] : x o free => free o x .
+rl [oAdvances] : free o => o free .
+rl [oJumps] : free x o => o x free .
+rl [encore] : o o o o o free x x x x x => x x x x x free o o o o o .
+endm
+
+in model-checker.maude
+
+mod RABBIT-HOP-PREDS is
+  protecting RABBIT-HOP .
+  extending SATISFACTION .
+
+  subsort RabbitList < State .
+
+  *** Declare here your state predicates and
+  *** give their equational definition.
+
+endm
+
+mod RABBIT-HOP-CHECK is protecting RABBIT-HOP-PREDS .
+    including MODEL-CHECKER .
+endm
