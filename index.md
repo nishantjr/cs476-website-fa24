@@ -192,6 +192,10 @@ Lectures
 * [Slides](lectures/pv24-slides-24.pdf)
 * [Appendix](lectures/pv24-appendix1-24.pdf)
 
+### Lecture 25
+
+* [Slides](lectures/pv25-slides-24.pdf)
+
 Homework
 --------
 
