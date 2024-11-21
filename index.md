@@ -196,6 +196,11 @@ Lectures
 
 * [Slides](lectures/pv25-slides-24.pdf)
 
+### Lecture 26
+
+* [Slides](lectures/pv26-slides-24.pdf)
+
+
 Homework
 --------
 
