@@ -1,0 +1,87 @@
+
+
+fmod LIST is
+  sorts Nat List .
+  subsort Nat < List .
+  op 0 : -> Nat [ctor] .
+  op s : Nat -> Nat [ctor] .
+  op nil : -> List [ctor] .
+  op _;_ : List List -> List [ctor assoc id: nil] .
+
+  vars n m x y z : Nat .  vars L L1 L2 L3 L4 : List . 
+endfm
+
+***(
+
+1.  Prove that [[ L ]] = [[ L1 ; L2 ]]
+
+match [1] L  <=? L1 ; L2 .
+
+Matcher 1
+L --> L1 ; L2
+
+match [1]  L1 ; L2 <=? L .
+
+Matcher 1
+L1 --> L
+L2 --> nil
+
+Prove that [[ n ; L ]] = [[ L1 ; m ]]
+
+match [1] n ; L <=? L1 ; m .
+
+No match.
+
+match [1] L1 ; m <=? n ; L .
+
+No match.
+
+Use the pattern decomp. lemma to prove
+
+n ; L (=AU L1 ; m
+
+decompose L by grator set: {nil,x,L2 ; y}
+
+match [1] L1 ; m  <=? n ; nil  .
+
+Matcher 1
+L1 --> nil
+m --> n
+
+match [1] L1 ; m  <=? n ; x  .
+
+Matcher 1
+L1 --> n
+m --> x
+
+match [1] L1 ; m  <=? n ; L2 ; y .
+
+Matcher 1
+L1 --> n ; L2
+m --> y
+
+Use the pattern decomp. lemma to prove
+
+ L1 ; m (=AU n ; L
+
+decompose L1 by grator set {nil,x,y ; L2}
+
+match [1] n ; L  <=? nil ; m .
+
+Matcher 1
+n --> m
+L --> nil
+
+match [1] n ; L <=? x ; m  .
+
+Matcher 1
+n --> x
+L --> m
+
+match [1] n ; L <=? y ; L2 ; m .
+
+Matcher 1
+n --> y
+L --> L2 ; m
+
+)
