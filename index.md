@@ -258,7 +258,7 @@ When submitting homework please make sure:
 
 * [Homework 7](homework/hw7-24.pdf)
 * [bakery2-ACU](homework/bakery2-ACU.maude)
-* [list-ctor-patterns](homework/list-ctor-patterns.maude)
+
 
 Tools used
 ----------
