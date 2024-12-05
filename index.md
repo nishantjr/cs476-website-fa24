@@ -205,6 +205,12 @@ Lectures
 * [Slides](lectures/pv27-slides-24.pdf)
 * [Appendix](lectures/pv27-appendix-24.pdf)
 
+### Lecture 28
+
+* [Slides](lectures/pv28-slides-24.pdf)
+* [Appendix 1](lectures/pv28-appendix1-24.pdf)
+* [Appendix 2](lectures/pv28-appendix2-24.pdf)
+
 Homework
 --------
 
