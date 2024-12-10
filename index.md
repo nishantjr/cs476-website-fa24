@@ -269,6 +269,10 @@ When submitting homework please make sure:
 * [Homework 7](homework/hw7-24.pdf)
 * [bakery2-ACU](homework/bakery2-ACU.maude)
 
+### Comprehensive Homework
+
+* [Comprehensive Homework](homework/hw-comp-24.pdf)
+* [Code](homework/comp-hwk-24-code.zip)
 
 Tools used
 ----------
